@@ -68,6 +68,19 @@
     background: var(--border-color);
 }
 
+.cta {
+    display: inline-block;
+    margin-top: 2.5rem;
+    padding: 1rem 2.5rem;
+    background-color: var(--accent-gold);
+    color: black;
+    border-radius: 100px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    width: fit-content;
+}
+
 @media (max-width: 768px) {
     .heroLayout {
         flex-direction: column;
