@@ -1,0 +1,75 @@
+.showcase {
+    padding: 10vh 4vw;
+    background-color: var(--bg-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4vw;
+}
+
+.label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.productTitle {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 1.5rem;
+}
+
+.productDesc {
+    max-width: 350px;
+    font-size: 0.95rem;
+    opacity: 0.7;
+    margin-bottom: 2.5rem;
+}
+
+.actionRow {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    gap: 1.5rem;
+    border-radius: 4px;
+}
+
+.addToBag {
+    background-color: var(--text-color);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: transform 0.2s ease;
+}
+
+.addToBag:hover {
+    transform: translateY(-2px);
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.productImg {
+    filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.05));
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

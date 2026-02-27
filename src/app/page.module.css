@@ -1,0 +1,80 @@
+.main {
+    width: 100%;
+}
+
+.dynamicPromo {
+    padding: 15vh 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+
+.massiveLogo {
+    font-size: clamp(5rem, 25vw, 20rem);
+    text-align: center;
+    letter-spacing: -0.05em;
+    opacity: 0.1;
+}
+
+.footer {
+    padding: 10vh 4vw;
+    background-color: var(--text-color);
+    color: white;
+    margin-top: 10vh;
+}
+
+.footerGrid {
+    display: flex;
+    justify-content: space-between;
+    gap: 4vw;
+}
+
+.footerBrand p {
+    opacity: 0.5;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+.footerLogo {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    text-transform: lowercase;
+}
+
+.footerLinks {
+    display: flex;
+    gap: 6vw;
+}
+
+.footerCol h4 {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.footerCol {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footerCol a {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .footerGrid {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .footerLinks {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}

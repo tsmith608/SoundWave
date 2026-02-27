@@ -1,0 +1,58 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.logo {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    text-transform: lowercase;
+    letter-spacing: -0.05em;
+    opacity: 1 !important;
+}
+
+.left,
+.right {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.right {
+    gap: 1.5rem;
+}
+
+.iconBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.srOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+@media (max-width: 1024px) {
+
+    .left,
+    .right>a:not(:last-child) {
+        display: none;
+    }
+}

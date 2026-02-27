@@ -1,0 +1,48 @@
+.section {
+    padding: 5vh 4vw 15vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgWrapper {
+    position: relative;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    background-color: var(--accent-muted);
+    margin-bottom: 1.5rem;
+}
+
+.img {
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.item:hover .img {
+    transform: scale(1.05);
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.label {
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+}
