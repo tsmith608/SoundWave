@@ -1,0 +1,157 @@
+.builder {
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    min-height: 80vh;
+    gap: 4vw;
+    padding: 4vw;
+}
+
+.previewSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.frame {
+    width: 80%;
+    aspect-ratio: 4/5;
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.3), 0 0 0 20px #fff;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+    position: relative;
+}
+
+.artContent {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.artText {
+    text-align: center;
+    margin-top: 2rem;
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.controlsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.group label {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    opacity: 0.6;
+}
+
+.gridGroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.paletteGrid {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.paletteBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 4px;
+    border: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.paletteBtn.active {
+    border-color: var(--accent-gold);
+}
+
+.paletteCircle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+.sizeToggle {
+    display: flex;
+    background: var(--accent-muted);
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.sizeBtn {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.sizeBtn.active {
+    background: var(--bg-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.textInput {
+    background: var(--accent-muted);
+    border: 1px solid var(--border-color);
+    color: white;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.slider {
+    width: 100%;
+    accent-color: var(--accent-gold);
+}
+
+.checkoutBtn {
+    background: var(--accent-gold);
+    color: black;
+    padding: 1rem;
+    border-radius: 100px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    transition: transform 0.2s;
+}
+
+.checkoutBtn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.checkoutBtn:not(:disabled):hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1100px) {
+    .builder {
+        grid-template-columns: 1fr;
+    }
+}

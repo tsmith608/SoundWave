@@ -1,0 +1,27 @@
+.canvasWrapper {
+    width: 100%;
+    aspect-ratio: 3/1;
+    background: var(--accent-muted);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.canvas {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.placeholder {
+    position: absolute;
+    color: var(--text-color);
+    opacity: 0.3;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}

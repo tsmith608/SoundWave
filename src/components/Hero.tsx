@@ -7,8 +7,8 @@ export default function Hero() {
             <div className={styles.heroLayout}>
                 <div className={styles.imageOverlay}>
                     <Image
-                        src="/images/bedroom.png"
-                        alt="Moody luxury bedroom"
+                        src="/images/art_mockup.png"
+                        alt="Premium soundwave art"
                         fill
                         className={styles.heroImage}
                         priority
@@ -16,20 +16,20 @@ export default function Hero() {
                 </div>
                 <div className={styles.content}>
                     <h1 className={styles.title}>
-                        <span>All the way</span>
+                        <span>A Voice That</span>
                         <br />
-                        <span>to the bedroom.</span>
+                        <span>Lasts Forever.</span>
                     </h1>
                     <p className={styles.subtitle}>
-                        Our bedding is made in France, so we are recognized worldwide for this expertise.
+                        Turn your most precious recordings into timeless soundwave art. Custom portraits for memorials, holidays, and milestones.
                     </p>
                     <div className={styles.tagList}>
-                        <span className={styles.tag}>cotton percale</span>
-                        <span className={styles.tag}>cotton gauze</span>
-                        <span className={styles.tag}>washed percale</span>
-                        <span className={styles.tag}>cotton satin</span>
-                        <span className={styles.tag}>french washed linen</span>
+                        <span className={styles.tag}>Memorials</span>
+                        <span className={styles.tag}>Wedding Vows</span>
+                        <span className={styles.tag}>Baby's First Words</span>
+                        <span className={styles.tag}>Holiday Gifts</span>
                     </div>
+                    <a href="#builder" className={styles.cta}>Start Creating</a>
                 </div>
             </div>
         </section>
